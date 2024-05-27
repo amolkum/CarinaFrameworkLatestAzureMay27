@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-27T11:26:12 IST" name="Default suite" finished-at="2024-05-27T11:26:39 IST" duration-ms="27519">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerClass.CucumberWebSampleTest@15a902e7]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-05-27T11:26:12 IST" name="Default test" finished-at="2024-05-27T11:26:39 IST" duration-ms="27519">
+      <class name="runnerClass.CucumberWebSampleTest">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runnerClass.CucumberWebSampleTest@15a902e7]" started-at="2024-05-27T11:26:12 IST" name="setUpClass" finished-at="2024-05-27T11:26:12 IST" duration-ms="505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerClass.CucumberWebSampleTest@15a902e7]" started-at="2024-05-27T11:26:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-27T11:26:22 IST" duration-ms="10252" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add one quantity from Store"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add to cart]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerClass.CucumberWebSampleTest@15a902e7]" started-at="2024-05-27T11:26:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-27T11:26:24 IST" duration-ms="1857" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add one quantity from Store"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add to cart]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Anchor Bracelet] but found [Blue Shoes]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Anchor Bracelet] but found [Blue Shoes]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.qapropsoft.carina.demo.gui.pages.desktop.CartPage.getProductNameTxt(CartPage.java:33)
+at com.qapropsoft.carina.demo.gui.pages.desktop.CartPage.productGetTextName(CartPage.java:45)
+at com.qapropsoft.carina.demo.addToCartStep.i_should_see_in_the_cart(addToCartStep.java:34)
+at ✽.I should see 1 "Anchor Bracelet" in the cart(file:///C:/Users/amol.kumbhare/Downloads/CarinaFrameworkAzureLatest14May-main1/CarinaFrameworkAzureLatest14May-main1/src/test/resources/features/add_to_cart.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerClass.CucumberWebSampleTest@15a902e7]" started-at="2024-05-27T11:26:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-27T11:26:32 IST" duration-ms="7717" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Perform operations on API like GET,POST,PUT,PATCH,DELETE"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify the get post in the API]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerClass.CucumberWebSampleTest@15a902e7]" started-at="2024-05-27T11:26:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-27T11:26:33 IST" duration-ms="645" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["I want to verify that the user is created in MySQL"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[DB Test]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerClass.CucumberWebSampleTest@15a902e7]" started-at="2024-05-27T11:26:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-27T11:26:39 IST" duration-ms="6185" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["using default payment option"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Place an order]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runnerClass.CucumberWebSampleTest@15a902e7]" started-at="2024-05-27T11:26:39 IST" name="tearDownClass" finished-at="2024-05-27T11:26:39 IST" duration-ms="290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runnerClass.CucumberWebSampleTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
